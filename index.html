@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets & Reps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background-color: black;
+            background-image: url('image/bg_boy.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 950px;
+        }
+        header{
+            /* position: fixed; */
+            width: 100%;
+            /* border: 2px solid red; */
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 20px;
+        }
+        .left img{
+            width: 60px;
+            margin: auto 45px;
+        }
+        .left div{
+            text-align: center;
+            /* font-family: 'Fredoka One', cursive; */
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid green; */
+            width: 50%;
+            margin: 20px auto;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none; /* remove the underline  */
+            padding: 30px 25px;
+            font-size: 25px;
+            /* font-family: 'Fredoka One', cursive; */
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: none;
+            color: rgb(0, 238, 255);
+            background-color: dimgray;
+        }
+        .right{
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 35px;
+        }
+        .btn{
+            margin: 0px 5px;
+            background-color: black;
+            color: white;
+            padding: 4px 16px;     
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: 17px;
+            cursor: pointer;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .btn:hover{
+            background-color: red;
+        }
+        /* section{
+            border: 1px solid white;
+        } */
+        .offer{
+            font-size: 60px;
+            color: #00c4ff;
+            font-family: 'Bangers', cursive;
+            /* border: 2px solid red; */
+            width: 100%;
+            position: absolute;
+            top: 115px;
+        }
+        .lcon{
+            display: inline-block;
+            /* border: 2px solid white; */
+            margin: 70px 38px;
+            padding: 60px 47px;
+            width: 33%;
+            border-radius: 30px;
+        }
+        .lcon h1{
+            font-size: 50px;
+            color: cyan;
+            margin: 15px auto;
+            font-family: 'Dancing Script', cursive;
+        }
+        .lcon p{
+            font-size: 21px;
+            margin: 15px auto;
+            font-family: 'Shadows Into Light', cursive;
+        }
+        .rcon{
+            display: inline-block;
+            border: 1px solid cyan;
+            margin: 120px -30px;
+            padding: 0px 32px;
+            width: 17%;
+            border-radius: 30px;
+            position: absolute;
+            right: 115px;
+        }
+        .rcon h1{
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            /* font-family: 'Do Hyeon', sans-serif; */
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .fromg{
+            text-align: center;
+        }
+        #g{
+            text-align: center;
+            width: 103%;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .fromg input{
+            text-align: center;
+            /* display: block; */
+            /* width: 34px; */
+            padding: 6px;
+            border: 2px solid rgb(138, 138, 138);
+            /* margin: 3px auto; */
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .btn1{
+            text-align: center;
+        }
+        .btn1 input{
+            text-align: center;
+            /* display: block; */
+            /* width: 34px; */
+            padding: 6px;
+            border: 2px solid rgb(138, 138, 138);
+            /* margin: 3px auto; */
+            cursor: pointer;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .btn1 input:hover{
+            background: cyan;
+        }
+
+        #footer{
+            /* border: 2px solid red; */
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding-bottom: 200px;
+            position: absolute;
+            bottom: 0px;
+            top: 850px;
+            width: 100%;
+            height: 80px;
+        }
+        .copy{
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+        }
+        .copy img{
+            width: 15%;
+            margin: 0px auto;
+        }
+        .copy p{
+            font-size: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .con{
+            text-align: center;
+            /* border: 2px solid rgb(34, 15, 209); */
+            display: inline-block;
+            padding: 20px 50px;
+            position: absolute;
+            left: 320px;
+            top: 25px;
+        }
+        .con h2{
+            font-size: 40px;
+            color: cyan;
+            font-family: 'Dancing Script', cursive;
+        }
+        .con a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .con a:hover{
+            color: brown;
+        }
+        .social{
+            text-align: center;
+            /* border: 2px solid rgb(241, 227, 17); */
+            display: inline-block;
+            padding: 20px 50px;
+            position: absolute;
+            right: 449px;
+            top: 25px;
+        }
+        .social h2{
+            font-size: 40px;
+            color:cyan;
+            font-family: 'Dancing Script', cursive;
+        }
+        .social a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .social a:hover{
+            color: brown;
+        }
+        .sub{
+            /* border: 2px solid rgb(25, 221, 255); */
+            display: inline-block;
+            position: absolute;
+            right: 65px;
+            top: 50px;
+            color: cyan;
+            font-family: 'Dancing Script', cursive;
+        }
+        #email{
+            text-align: center;
+            /* display: block; */
+            /* width: 34px; */
+            padding: 6px;
+            border: 2px solid rgb(138, 138, 138);
+            /* margin: 3px auto; */
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        #email-btn{
+            text-align: center;
+            padding: 6px;
+            border: 2px solid rgb(138, 138, 138);
+            /* margin: 3px auto; */
+            cursor: pointer;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+    </style> -->
+</head>
+<body>
+    <header>
+        <!-- left for logo -->
+        <div class="left">
+            <img src="image/logo.jpg" alt="">
+            <div>Sets and Reps</div>
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- right for btn  -->
+        <div class="right">
+            <button class="btn">
+                call us
+            </button>
+            <button class="btn">
+                email us
+            </button>
+        </div>
+    </header>
+    
+    <section>
+        <div class="offer">
+            <p><marquee>flat 50% off couples</marquee></p>
+        </div>
+            <div class="lcon">
+                <h1>‘What hurts today makes you stronger tomorrow.’</h1>
+                <p>— <strong>Jay Cutler</strong>, pro bodybuilder and four-time Mr. Olympia</p>
+            </div>
+            <div class="rcon">
+                <h1>Join Now</h1>
+                <form action="backend.php">
+                    <div class="fromg">
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <br>
+                    <div class="fromg">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <br>
+                    <div id="g">
+                        <fieldset>
+                            <legend>Gender</legend>
+                            Male<input type="radio" name="mygender">
+                            Female<input type="radio" name="mygender">
+                            Other<input type="radio" name="mygender">
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div class="fromg">
+                        <input type="date" placeholder="Date of Birth">
+                    </div>
+                    <br>
+                    <div class="fromg">
+                        <input type="number" placeholder="Phone Number">
+                    </div>
+                    <br>
+                    <div class="btn1">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                    <br>
+                </form>
+            </div>
+    </section>
+    
+    <footer id="footer"> 
+        <div class="copy">
+            <img src="image/logo.jpg" alt="">
+            <p>&copy;2021</p>
+        </div>
+        <div class="con">
+            <h2>Contact Us</h2>
+            <a href="#">Jobs</a><br>
+            <a href="#">Support</a><br>
+            <a href="#">Contact</a><br>
+            <a href="#">Sponsorships</a><br>
+        </div>
+        <div class="social">
+            <h2>Social Media</h2>
+            <a href="#">Instagram</a><br>
+            <a href="#">Facebook</a><br>
+            <a href="#">Youtube</a><br>
+            <a href="#">Twitter</a><br>
+        </div>
+        <div class="sub">
+            <h2>Join our Newsletter</h2>
+            <input type="email" id="email" placeholder="Enter your Email">
+            <input type="submit" id="email-btn" value="Sign up">
+        </div>
+    </footer>
+    
+</body>
+</html>
